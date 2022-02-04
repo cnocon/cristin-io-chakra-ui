@@ -1,10 +1,17 @@
 import * as React from "react";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, VStack, useColorModeValue } from "@chakra-ui/react";
 
 export const Portfolio: React.FC = () => {
   return (
     <Box>
-      <Heading>Portfolio</Heading>
+      <Heading
+        fontWeight="500"
+        letterSpacing="1px"
+        textTransform="uppercase"
+        as="h2"
+      >
+        Portfolio
+      </Heading>
     </Box>
   );
 };

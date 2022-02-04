@@ -9,6 +9,7 @@
     "@fontsource/lato": "^4.5.1",
     "@fontsource/open-sans": "^4.5.3",
     "@fontsource/oswald": "^4.5.2",
+    "@fontsource/pacifico": "^4.5.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^10.4.9",
     "@testing-library/user-event": "^12.8.3",
