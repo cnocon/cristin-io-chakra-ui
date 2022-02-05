@@ -79,16 +79,13 @@ export const App = () => (
     >
       <Wrapper
         options={{
-          bg: useColorModeValue("gray.100", "gray.900"),
-          color: useColorModeValue(
-            "brand.primary.base",
-            "brand.primary.lightest"
-          ),
+          bg: useColorModeValue("gray.100", "gray.700"),
+          color: useColorModeValue("brand.700", "brand.900"),
         }}
       >
         <WrapperInner>
           <HStack spacing="5" my="5">
-            <Heading as="h1" fontFamily="brand">
+            <Heading fontFamily="brand" as="h1">
               Cristin O'Connor
             </Heading>
             <Spacer />
@@ -132,26 +129,39 @@ export const App = () => (
       <Wrapper
         options={{
           bg: useColorModeValue("gray.100", "gray.900"),
-          color: useColorModeValue(
-            "brand.primary.base",
-            "brand.primary.lightest"
-          ),
+          color: useColorModeValue("brand.400", "brand.200est"),
         }}
       >
         <WrapperInner>
           <Flex alignItems="center">
-            <Text
-              as="span"
-              marginRight="2"
-              fontSize="sm"
-              lineHeight="md"
-              fontWeight="700"
-              textTransform="uppercase"
-            >
+            <Text as="p" marginRight="3" fontSize="md">
               Copyright &copy; {date.getFullYear()}
             </Text>
-            <Text fontFamily="brand" lineHeight="md">
+            <Text fontFamily="brand" as="p" fontSize="md" fontWeight="600">
               <RouterLink to="/">Cristin O'Connor</RouterLink>
+            </Text>
+          </Flex>
+          <Flex>
+            <Text as="p" fontFamily="body" fontSize="sm" fontWeight="600">
+              <Link fontSize="sm" to="mailto:her@cristin.io">
+                her@cristin.io
+              </Link>
+              &nbsp;|&nbsp;
+              <Link
+                fontSize="sm"
+                to="https://www.linkedin.com/in/cristinoconnor/"
+                target="_blank"
+              >
+                LinkedIn
+              </Link>
+              &nbsp;|&nbsp;
+              <Link
+                fontSize="sm"
+                to="https://www.github.com/cnocon/"
+                target="_blank"
+              >
+                GitHub
+              </Link>
             </Text>
           </Flex>
         </WrapperInner>
